@@ -1,0 +1,221 @@
+---
+title: 'Silo Shots Guide'
+description: 'Quality requirements and best practices for product photography'
+---
+
+## Silo Quality Requirements
+
+Perfect product shots are the foundation of stunning AI-generated scenes. Follow these guidelines for optimal results.
+
+<Info>
+  **Key Principle**: The quality of your input directly affects your output. Invest in good product photography.
+</Info>
+
+## File Requirements
+
+### Accepted Formats
+- **Standard**: .jpg, .png, .webp
+- **All common image types** are supported
+- **Transparency**: PNG with alpha channel works perfectly
+- **File size**: Up to 50MB per image
+
+### Resolution Guidelines
+
+<Warning>
+  **Always provide the highest-resolution photos available.** AI can't add detail that isn't there.
+</Warning>
+
+| Minimum | Recommended | Optimal |
+|---------|-------------|---------|
+| 1000×1000px | 2000×2000px | 4000×4000px+ |
+| Web-only use | Standard quality | Print & zoom |
+
+## Background Options
+
+### White Background (Silo)
+Traditional product photography with pure white background:
+- **Advantages**: Clean, consistent, professional
+- **Best for**: E-commerce, catalogs, batch processing
+- **Tips**: Ensure true white (#FFFFFF), not gray
+
+### Lifestyle Shots
+Existing room scenes with your product:
+- **Advantages**: Can extract product with context
+- **Process**: AI automatically removes background
+- **Use when**: Silo shots unavailable
+
+<Note>
+  Background removal is automatic for both types - no manual masking needed!
+</Note>
+
+## 3D Rendering Guidelines
+
+### Export Settings
+When using 3D software, optimize your exports:
+
+<Tabs>
+  <Tab title="Resolution">
+    - **Minimum**: 2K (2048×2048)
+    - **Recommended**: 4K (4096×4096)
+    - **Maximum quality**: 8K if available
+  </Tab>
+  <Tab title="Textures">
+    - Enable all texture maps
+    - Maximum texture resolution
+    - Include bump/normal maps
+    - Proper UV mapping
+  </Tab>
+  <Tab title="Lighting">
+    - Neutral studio lighting
+    - Soft shadows enabled
+    - No harsh directional light
+    - Even illumination
+  </Tab>
+</Tabs>
+
+## Critical Canvas Placement Rules
+
+### The Permanent Position Principle
+
+<Warning>
+  **CRITICAL**: Where you place the product on canvas is its FINAL position. This cannot be changed after generation.
+</Warning>
+
+<Steps>
+  <Step title="Upload Product">
+    Import your silo or lifestyle shot
+  </Step>
+  <Step title="Position Carefully">
+    Place product where it should appear in final scene
+  </Step>
+  <Step title="Scale Appropriately">
+    Size tells AI about floor level and perspective
+  </Step>
+  <Step title="Leave Space">
+    Empty canvas space = room for AI to build scene
+  </Step>
+</Steps>
+
+### Common Positioning Mistakes
+
+| Mistake | Result | Solution |
+|---------|--------|----------|
+| **Product fills canvas** | No room for scene | Scale down, reposition |
+| **Floating placement** | Unrealistic scenes | Lower to establish floor |
+| **Edge placement** | Cropped results | Center with margin |
+| **Wrong scale** | Proportion issues | Reference real-world size |
+
+## Pre-Generation Workflow
+
+### Accessorizing Before Generation
+
+<Info>
+  **Rule**: Add ALL accessories BEFORE clicking "Generate background"
+</Info>
+
+1. **Position main product** on canvas
+2. **Select Accessorize tool**
+3. **Brush areas** for each accessory
+4. **Describe specifically** what should appear
+5. **Then generate** complete scene
+
+### Brush Tool Technique
+
+<CardGroup cols={2}>
+  <Card title="Size Guidance" icon="brush">
+    - Brush size hints accessory scale
+    - Make slightly larger than intended
+    - Overlap is better than gaps
+  </Card>
+  <Card title="Description Quality" icon="pencil">
+    - Be specific and detailed
+    - Include materials and colors
+    - Describe positioning
+  </Card>
+</CardGroup>
+
+### Accessory Description Examples
+
+Good: **Good Descriptions:**
+- "Sleeping brown Welsh Corgi wrapped in blue wool blanket"
+- "Large fiddle leaf fig in white ceramic planter with drainage tray"
+- "Stack of 5 hardcover books with neutral linen spines"
+
+Avoid: **Poor Descriptions:**
+- "Brown dog"
+- "Plant"
+- "Books"
+
+## Photography Best Practices
+
+### Lighting Setup
+- **Even lighting**: Minimize harsh shadows
+- **Neutral color**: Avoid color casts
+- **Multiple angles**: Helps AI understand form
+- **Consistent exposure**: Across all shots
+
+### Product Preparation
+- **Clean thoroughly**: Dust and marks show
+- **Steam/iron fabrics**: Remove wrinkles
+- **Check alignment**: Straight lines, symmetry
+- **Stage properly**: Natural product position
+
+### Technical Tips
+
+<AccordionGroup>
+  <Accordion title="Camera settings">
+    - Tripod for stability
+    - F8-F11 for sharpness
+    - Low ISO (100-400)
+    - Proper white balance
+  </Accordion>
+  <Accordion title="Post-processing">
+    - Minimal editing only
+    - Maintain natural colors
+    - Don't over-sharpen
+    - Keep shadows/highlights
+  </Accordion>
+  <Accordion title="File handling">
+    - Save uncompressed
+    - Maintain color profile
+    - Use consistent naming
+    - Organize by category
+  </Accordion>
+</AccordionGroup>
+
+## Quality Checklist
+
+Before uploading, verify:
+
+- [ ] Maximum available resolution
+- [ ] Clean, distraction-free image
+- [ ] Proper file format
+- [ ] Good lighting and exposure
+- [ ] Natural product position
+- [ ] No unwanted reflections
+- [ ] Consistent angle (for sets)
+
+## Troubleshooting
+
+### Common Issues
+
+<Tabs>
+  <Tab title="Blurry Results">
+    **Cause**: Low resolution source
+    **Fix**: Use higher resolution original
+  </Tab>
+  <Tab title="Color Shifts">
+    **Cause**: Incorrect white balance
+    **Fix**: Neutralize in photo editing first
+  </Tab>
+  <Tab title="Lost Details">
+    **Cause**: Over-compressed files
+    **Fix**: Use less compressed format
+  </Tab>
+</Tabs>
+
+## Next Steps
+
+<Check>
+  Quality shots ready? Learn to write effective [AI Prompts](/guides/ai-prompts) for stunning scenes.
+</Check>

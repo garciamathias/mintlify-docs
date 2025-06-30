@@ -1,0 +1,107 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Presti.ai Documentation",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#5D50EA",
+    "light": "#C1C1FF",
+    "dark": "#1A135C",
+    "anchors": {
+      "from": "#5D50EA",
+      "to": "#C1C1FF"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@presti.ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://app.presti.ai"
+  },
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://docs.presti.ai"
+    },
+    {
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://presti.ai/community"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://presti.ai/blog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "quickstart",
+        "features"
+      ]
+    },
+    {
+      "group": "Pricing & Credits",
+      "pages": [
+        "pricing/overview",
+        "pricing/credits-system",
+        "pricing/plans-comparison"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "features/image-generation",
+        "features/editing-tools",
+        "features/batch-mode",
+        "features/video-generation",
+        "features/team-collaboration",
+        "features/custom-ai"
+      ]
+    },
+    {
+      "group": "User Guides",
+      "pages": [
+        "guides/prompt-examples",
+        "guides/silo-shots",
+        "guides/ai-prompts",
+        "guides/best-practices",
+        "guides/resolution-guide",
+        "guides/lighting-guide",
+        "guides/multi-product-staging"
+      ]
+    },
+    {
+      "group": "Troubleshooting",
+      "pages": [
+        "troubleshooting/common-issues",
+        "troubleshooting/perspective-matching",
+        "troubleshooting/lighting-integration"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": [
+        "support/contact",
+        "support/faq",
+        "support/live-onboarding"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/presti_ai",
+    "github": "https://github.com/presti-ai",
+    "linkedin": "https://www.linkedin.com/company/presti-ai"
+  }
+}

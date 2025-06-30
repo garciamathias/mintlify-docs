@@ -1,0 +1,300 @@
+---
+title: 'Common Issues'
+description: 'Quick solutions to frequent challenges'
+---
+
+## Troubleshooting Guide
+
+Find solutions to common issues and learn how to avoid them in the future.
+
+<Info>
+  Most issues can be prevented with proper preparation and understanding of the tools.
+</Info>
+
+## Quick Fix Reference
+
+| Issue | Symptom | Fast Fix |
+|-------|---------|----------|
+| **Perspective mismatch** | Objects clash visually | Use photos from same angle |
+| **Wrong lighting** | Product too bright/dark | Adjust Relight intensity |
+| **Scale problems** | Items look wrong size | Manually resize products |
+| **Scene clutter** | Too busy, distracting | Add "clean space" to prompt |
+| **Floating product** | No floor contact | Lower product on canvas |
+| **Extra elements** | Unwanted duplications | Use Resize Product tool |
+
+## Generation Issues
+
+### Product Positioning Problems
+
+<Tabs>
+  <Tab title="Floating Product">
+    **Problem**: Product appears to float above floor
+    
+    **Causes**:
+    - Placed too high on canvas
+    - Canvas doesn't understand floor level
+    
+    **Solution**:
+    1. Reload image in editor
+    2. Move product lower on canvas
+    3. Scale appropriately
+    4. Regenerate scene
+    
+    **Prevention**: Always position bottom of product where floor should be
+  </Tab>
+  <Tab title="Cut-off Product">
+    **Problem**: Product partially outside frame
+    
+    **Causes**:
+    - Product too large for canvas
+    - Positioned at edge
+    
+    **Solution**:
+    1. Scale product smaller
+    2. Center on canvas
+    3. Leave margin around edges
+    
+    **Prevention**: Keep product within center 80% of canvas
+  </Tab>
+  <Tab title="Wrong Perspective">
+    **Problem**: Product angle doesn't match scene
+    
+    **Causes**:
+    - Original photo angle incompatible
+    - AI can't rotate products
+    
+    **Solution**:
+    - Re-photograph from better angle
+    - Use different source image
+    
+    **Prevention**: Shoot at 45° angle for versatility
+  </Tab>
+</Tabs>
+
+### Unwanted Elements
+
+<Warning>
+  **Common Issue**: Extra legs or parts appearing under products (especially corner pieces)
+</Warning>
+
+**Quick Fix Using Resize Product:**
+1. Open image in edit mode
+2. Select "Resize Product" tool
+3. Shrink bounding box to exclude unwanted parts
+4. Validate selection
+5. Product regenerates without extras
+
+## Scene Quality Issues
+
+### Lighting Problems
+
+<AccordionGroup>
+  <Accordion title="Scene too dark">
+    **Causes**: 
+    - Insufficient light sources in prompt
+    - Low Relight setting
+    
+    **Solutions**:
+    - Add "bright natural light" to prompt
+    - Use Medium or High Relight setting
+    - Include multiple light sources
+  </Accordion>
+  <Accordion title="Overexposed/washed out">
+    **Causes**:
+    - Too many light sources
+    - High Relight on bright scene
+    
+    **Solutions**:
+    - Reduce windows in prompt
+    - Use Low Relight setting
+    - Add "soft diffused light"
+  </Accordion>
+  <Accordion title="Mixed color temperatures">
+    **Causes**:
+    - Multiple light types specified
+    - Conflicting descriptions
+    
+    **Solutions**:
+    - Stick to one light type
+    - Specify color temperature
+    - Use consistent descriptions
+  </Accordion>
+</AccordionGroup>
+
+### Background Issues
+
+<Tabs>
+  <Tab title="Cluttered Background">
+    **Fix Strategy**:
+    1. Add to prompt: "minimal decor", "clean walls"
+    2. Use Magic Erase on unwanted items
+    3. Regenerate with simpler prompt
+    
+    **Keywords to add**:
+    - "uncluttered"
+    - "simple"
+    - "minimal accessories"
+    - "clean space"
+  </Tab>
+  <Tab title="Wrong Style">
+    **Fix Strategy**:
+    1. Be more specific in prompt
+    2. Use inspiration image
+    3. Add style keywords
+    
+    **Style descriptors**:
+    - "modern minimalist"
+    - "traditional elegant"
+    - "scandinavian"
+    - "industrial chic"
+  </Tab>
+  <Tab title="Unrealistic Elements">
+    **Fix Strategy**:
+    1. Remove fantastical descriptions
+    2. Reference real rooms
+    3. Use "photorealistic" keyword
+    
+    **Avoid**:
+    - Impossible architectures
+    - Conflicting elements
+    - Over-the-top descriptions
+  </Tab>
+</Tabs>
+
+## Multi-Product Issues
+
+### Perspective Mismatch
+
+The #1 issue with multi-product scenes:
+
+<Steps>
+  <Step title="Diagnose">
+    Check if all products photographed from same angle
+  </Step>
+  <Step title="Document">
+    Note which products don't match
+  </Step>
+  <Step title="Re-shoot">
+    Photograph mismatched items from correct angle
+  </Step>
+  <Step title="Test">
+    Try with 2 products first
+  </Step>
+  <Step title="Scale Production">
+    Once working, add more products
+  </Step>
+</Steps>
+
+### Scale Relationships
+
+| Problem | Visual Cue | Solution |
+|---------|------------|----------|
+| **Chair too large** | Doesn't fit under table | Scale down 10-20% |
+| **Coffee table too high** | Above sofa seat | Lower or scale down |
+| **Lamp too small** | Looks like toy | Scale up significantly |
+| **Rug too small** | Furniture not on it | Scale up to fit |
+
+## Performance Issues
+
+### Slow Generation
+
+<CardGroup cols={2}>
+  <Card title="Complex Prompts" icon="text">
+    Simplify overly detailed descriptions
+  </Card>
+  <Card title="High Traffic" icon="users">
+    Try during off-peak hours
+  </Card>
+  <Card title="Large Images" icon="image">
+    Optimize source file size
+  </Card>
+  <Card title="Multiple Products" icon="layer-group">
+    Start with fewer items
+  </Card>
+</CardGroup>
+
+### Quality Degradation
+
+**If output quality seems low:**
+1. Check source image resolution
+2. Ensure proper file format
+3. Avoid over-compressed files
+4. Use original photos, not screenshots
+
+## Platform-Specific Issues
+
+### Upload Problems
+
+<AccordionGroup>
+  <Accordion title="File won't upload">
+    - Check file size (< 50MB)
+    - Verify format (.jpg, .png, .webp)
+    - Try different browser
+    - Clear cache and cookies
+  </Accordion>
+  <Accordion title="Image appears corrupted">
+    - Re-save in standard format
+    - Remove special characters from filename
+    - Check color profile (sRGB preferred)
+    - Avoid CMYK images
+  </Accordion>
+</AccordionGroup>
+
+### Browser Compatibility
+
+**Best browsers:**
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (Chromium)
+
+**If issues persist:**
+1. Update browser
+2. Disable extensions
+3. Try incognito mode
+4. Clear browser data
+
+## Prevention Strategies
+
+### Pre-Flight Checklist
+
+Before starting any project:
+- [ ] Photos from consistent angle
+- [ ] High resolution originals
+- [ ] Clear project goals
+- [ ] Style references ready
+- [ ] Test with single product
+
+### Quality Standards
+
+Maintain these standards:
+- **Photography**: Consistent angle and lighting
+- **File prep**: Proper format and size
+- **Prompting**: Clear, specific descriptions
+- **Review**: Check before downloading
+
+## Getting Help
+
+### Self-Service Resources
+
+1. **This documentation**: Search for specific issues
+2. **FAQ section**: Common questions answered
+3. **Video tutorials**: Visual guidance
+4. **Community forum**: Learn from others
+
+### Contacting Support
+
+When reaching out, provide:
+- Project/workspace name
+- User email
+- Screenshots of issue
+- Steps to reproduce
+- Error messages (if any)
+
+<Info>
+  **Support Response**: Our team typically responds within 24 hours on business days.
+</Info>
+
+<Check>
+  Can't find your issue? Check [Perspective Matching](/troubleshooting/perspective-matching) or [Contact Support](/support/contact).
+</Check>

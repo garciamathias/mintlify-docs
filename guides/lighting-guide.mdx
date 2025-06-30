@@ -1,0 +1,355 @@
+---
+title: 'Lighting Guide'
+description: 'Master lighting for photorealistic product visualization'
+---
+
+## The Importance of Lighting
+
+Lighting is crucial for highlighting texture, shape, and finish. Master these techniques for both capturing products and generating scenes.
+
+<Info>
+  **Why it matters**: Proper lighting boosts both realism and appeal, making products irresistible to customers.
+</Info>
+
+## Creating Product Shots
+
+### Natural Light Photography
+
+The gold standard for product photography:
+
+<CardGroup cols={2}>
+  <Card title="Setup" icon="sun">
+    - Position near large windows
+    - Use north-facing for consistency
+    - Avoid direct sunlight
+    - Best times: morning/late afternoon
+  </Card>
+  <Card title="Benefits" icon="sparkles">
+    - Soft, diffused illumination
+    - Authentic textures revealed
+    - Minimal harsh shadows
+    - True color representation
+  </Card>
+</CardGroup>
+
+### Artificial Lighting Setup
+
+When natural light isn't available:
+
+| Tool | Purpose | Setup Tips |
+|------|---------|------------|
+| **Softboxes** | Even, shadow-free light | Place at 45° angles |
+| **Diffusers** | Soften harsh light | Between light and product |
+| **Reflectors** | Fill shadow areas | Opposite main light |
+| **LED Panels** | Consistent color | Match daylight temp |
+
+### Directional Control
+
+<Tabs>
+  <Tab title="Side Lighting">
+    **Purpose**: Emphasize texture & depth
+    - Position light at 45-90° angle
+    - Creates dramatic shadows
+    - Highlights surface details
+    - Best for textured materials
+  </Tab>
+  <Tab title="Front Lighting">
+    **Purpose**: Even illumination
+    - Minimizes shadows
+    - Shows true colors
+    - Good for flat lays
+    - Safe, versatile option
+  </Tab>
+  <Tab title="Backlighting">
+    **Purpose**: Create separation
+    - Adds halo effect
+    - Separates from background
+    - Creates depth
+    - Dramatic for translucent materials
+  </Tab>
+  <Tab title="Fill Lighting">
+    **Purpose**: Balance shadows
+    - Softens harsh contrasts
+    - Reveals shadow details
+    - Creates natural look
+    - Essential for realism
+  </Tab>
+</Tabs>
+
+### Color Temperature Mastery
+
+Match your lighting to your brand aesthetic:
+
+| Temperature | Kelvin | Atmosphere | Best For |
+|-------------|--------|------------|----------|
+| **Warm White** | 2700-3000K | Cozy, inviting | Traditional, rustic |
+| **Neutral White** | 3500-4000K | Balanced, natural | Versatile option |
+| **Cool White** | 5000-5500K | Clean, modern | Contemporary designs |
+| **Daylight** | 6000-6500K | Crisp, energetic | True color matching |
+
+<Warning>
+  Always maintain consistent color temperature across all lights to avoid mixed lighting issues.
+</Warning>
+
+## Generating Lifestyle Images
+
+### Communicating Lighting in Prompts
+
+<Steps>
+  <Step title="Describe the Mood">
+    Use atmospheric terms: "soft morning light", "dramatic sunset", "bright and airy"
+  </Step>
+  <Step title="Specify Sources">
+    Mention windows, lamps, or natural light directions
+  </Step>
+  <Step title="Upload Inspiration">
+    Use reference images to convey exact lighting style
+  </Step>
+  <Step title="Refine Results">
+    Use Relight tool for post-generation adjustments
+  </Step>
+</Steps>
+
+### Effective Lighting Prompts
+
+**Morning Light**
+```
+"Soft morning sunlight streaming through sheer curtains, 
+warm golden hour glow, gentle shadows"
+```
+
+**Afternoon Brightness**
+```
+"Bright natural daylight from large windows, 
+even illumination, minimal shadows, airy feeling"
+```
+
+**Evening Ambiance**
+```
+"Warm evening lighting with table lamps, 
+cozy atmosphere, soft pools of light, intimate mood"
+```
+
+**Studio Lighting**
+```
+"Professional studio lighting, bright and even, 
+no harsh shadows, product showcase quality"
+```
+
+### Managing Light Intensity
+
+If generated lighting is too intense:
+
+<AccordionGroup>
+  <Accordion title="Reduce in Prompt">
+    - Change "floor-to-ceiling windows" to "small window"
+    - Remove multiple light sources
+    - Add "soft", "diffused", "subtle"
+  </Accordion>
+  <Accordion title="Post-Generation Fix">
+    - Use Relight tool
+    - Try Low setting for subtle light
+    - Generate variations
+  </Accordion>
+</AccordionGroup>
+
+### The Relight Tool
+
+Post-generation lighting perfection:
+
+<Tabs>
+  <Tab title="Low Setting">
+    **When to use**:
+    - Dim, moody rooms
+    - Evening scenes
+    - Single small window
+    - Intimate settings
+    
+    **Effect**: Subtle shadows, warm tones
+  </Tab>
+  <Tab title="Medium Setting">
+    **When to use**:
+    - Standard daylight
+    - Multiple windows
+    - Balanced exposure
+    - Most scenarios
+    
+    **Effect**: Natural shadows, true colors
+  </Tab>
+  <Tab title="High Setting">
+    **When to use**:
+    - Bright studio feel
+    - Product showcase
+    - Minimal shadows
+    - Clean, modern look
+    
+    **Effect**: Even lighting, crisp details
+  </Tab>
+</Tabs>
+
+**Each setting generates 4 variations** — keep generating for more options.
+
+## Lighting for Different Materials
+
+### Material-Specific Techniques
+
+<CardGroup cols={2}>
+  <Card title="Wood & Natural Materials" icon="tree">
+    - Side lighting for grain
+    - Warm color temperature
+    - Moderate intensity
+    - Highlight texture
+  </Card>
+  <Card title="Metal & Glass" icon="gem">
+    - Controlled reflections
+    - Multiple angles
+    - Diffused sources
+    - Avoid hot spots
+  </Card>
+  <Card title="Fabric & Textiles" icon="shirt">
+    - Soft, even light
+    - Show texture detail
+    - Avoid harsh shadows
+    - Natural feel
+  </Card>
+  <Card title="Leather & Luxury" icon="crown">
+    - Dramatic angles
+    - Rich shadows
+    - Warm tones
+    - Premium feel
+  </Card>
+</CardGroup>
+
+## Common Lighting Scenarios
+
+### Room-Specific Lighting
+
+<Tabs>
+  <Tab title="Living Rooms">
+    **Key Elements**:
+    - Large windows for natural light
+    - Ambient ceiling fixtures
+    - Accent table/floor lamps
+    - Warm, inviting atmosphere
+    
+    **Prompt Example**:
+    "Living room with large west-facing windows, soft afternoon light, warm ambient lighting from modern floor lamp"
+  </Tab>
+  <Tab title="Bedrooms">
+    **Key Elements**:
+    - Soft, diffused light
+    - Bedside lamps
+    - Morning or evening mood
+    - Cozy, restful feeling
+    
+    **Prompt Example**:
+    "Master bedroom with gentle morning light through sheer curtains, warm bedside sconces, peaceful atmosphere"
+  </Tab>
+  <Tab title="Kitchens">
+    **Key Elements**:
+    - Bright task lighting
+    - Under-cabinet lights
+    - Natural daylight
+    - Clean, functional feel
+    
+    **Prompt Example**:
+    "Modern kitchen with bright natural light, LED under-cabinet lighting, clean and energetic atmosphere"
+  </Tab>
+  <Tab title="Offices">
+    **Key Elements**:
+    - Balanced desk lighting
+    - Natural light from side
+    - Minimal glare
+    - Productive atmosphere
+    
+    **Prompt Example**:
+    "Home office with natural light from left window, adjustable desk lamp, balanced lighting for productivity"
+  </Tab>
+</Tabs>
+
+## Troubleshooting Lighting Issues
+
+### Common Problems & Solutions
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| **Too Dark** | Insufficient light sources | Add windows or lamps to prompt |
+| **Overexposed** | Too many/bright sources | Reduce light sources, use "soft" |
+| **Mixed Colors** | Multiple temperatures | Specify single color temp |
+| **Harsh Shadows** | Direct lighting | Add "diffused" or "soft" |
+| **Flat Lighting** | Too even | Add directional elements |
+
+## Advanced Lighting Techniques
+
+### Creating Mood
+
+<AccordionGroup>
+  <Accordion title="Dramatic Effect">
+    - Strong directional light
+    - Deep shadows
+    - Limited sources
+    - High contrast
+  </Accordion>
+  <Accordion title="Soft & Dreamy">
+    - Diffused sources
+    - Warm temperatures
+    - Multiple soft lights
+    - Low contrast
+  </Accordion>
+  <Accordion title="Clean & Modern">
+    - Even illumination
+    - Cool temperatures
+    - Minimal shadows
+    - High key lighting
+  </Accordion>
+  <Accordion title="Cozy & Intimate">
+    - Warm pools of light
+    - Table/floor lamps
+    - Evening ambiance
+    - Selective lighting
+  </Accordion>
+</AccordionGroup>
+
+## Lighting Workflow
+
+<Steps>
+  <Step title="Product Photography">
+    Capture with optimal lighting setup
+  </Step>
+  <Step title="Scene Planning">
+    Decide mood and atmosphere
+  </Step>
+  <Step title="Prompt Creation">
+    Describe lighting clearly
+  </Step>
+  <Step title="Generation">
+    Create scene with AI
+  </Step>
+  <Step title="Refinement">
+    Use Relight tool if needed
+  </Step>
+  <Step title="Final Check">
+    Ensure consistency
+  </Step>
+</Steps>
+
+## Best Practices Summary
+
+<CardGroup cols={2}>
+  <Card title="Consistency" icon="equals">
+    Maintain uniform lighting across product lines
+  </Card>
+  <Card title="Authenticity" icon="check">
+    Match lighting to real-world scenarios
+  </Card>
+  <Card title="Purpose" icon="target">
+    Align lighting with intended mood
+  </Card>
+  <Card title="Quality" icon="star">
+    Start with well-lit product photos
+  </Card>
+</CardGroup>
+
+<Check>
+  Lighting mastered? Explore [Multi-Product Staging](/guides/multi-product-staging) for complex scenes.
+</Check>
