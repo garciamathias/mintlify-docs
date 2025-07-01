@@ -48,16 +48,8 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "features"
-            ]
-          },
-          {
-            "group": "Pricing & Credits",
-            "pages": [
-              "pricing/overview",
-              "pricing/credits-system",
-              "pricing/plans-comparison"
+              "about",
+              "quickstart"
             ]
           },
           {
@@ -89,6 +81,14 @@
               "troubleshooting/common-issues",
               "troubleshooting/perspective-matching",
               "troubleshooting/lighting-integration"
+            ]
+          },
+          {
+            "group": "Pricing & Credits",
+            "pages": [
+              "pricing/overview",
+              "pricing/credits-system",
+              "pricing/plans-comparison"
             ]
           },
           {
