@@ -5,7 +5,7 @@ description: 'Generate multiple product visuals automatically at scale'
 
 ## Batch Processing Overview
 
-Batch mode enables you to generate lifestyle scenes for multiple products simultaneously, saving hours of manual work.
+Batch mode is your go-to tool for generating consistent styled images across multiple products in one go. Create uniform visuals for your catalog, campaigns, or online store with just one prompt.
 
 <Note>
   **Available on**: Team and Enterprise plans only
@@ -14,220 +14,102 @@ Batch mode enables you to generate lifestyle scenes for multiple products simult
 ## How Batch Mode Works
 
 <Steps>
-  <Step title="Prepare Your Products">
-    Organize product images and ensure consistent quality
+  <Step title="Upload Products">
+    Simply upload all the product images you want to work with
   </Step>
-  <Step title="Create Template">
-    Design your scene template with prompts and settings
+  <Step title="Write Your Prompt">
+    Write a prompt describing the type of scene or vibe you'd like to apply across all products
   </Step>
-  <Step title="Upload Batch">
-    Import via CSV or select multiple products
+  <Step title="Select Format">
+    Choose the format you'd like the images to be staged in
   </Step>
-  <Step title="Process">
-    AI generates all scenes automatically
-  </Step>
-  <Step title="Review & Download">
-    Check results and download approved images
+  <Step title="Generate">
+    Click the run button - in just a few seconds, Presti will generate individual images for each product
   </Step>
 </Steps>
 
-## Input Methods
+<Info>
+  All products will be styled in a cohesive way based on your prompt, ensuring every product has the same look, feel, and aesthetic.
+</Info>
 
-### CSV Upload
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/uKBmjp1s38k"
+  title="Batch Mode Tutorial"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
 
-Structure your CSV with these columns:
+## Key Benefits
 
-| Column | Required | Description |
-|--------|----------|-------------|
-| **sku** | Yes | Unique product identifier |
-| **image_url** | Yes | Direct link to product image |
-| **product_name** | No | For organization |
-| **prompt_override** | No | Custom prompt for specific product |
-| **category** | No | For grouping results |
-
-<CodeGroup>
-```csv Example CSV
-sku,image_url,product_name,prompt_override,category
-SOFA-001,https://example.com/sofa1.jpg,Modern Gray Sofa,,Living Room
-CHAIR-002,https://example.com/chair2.jpg,Velvet Accent Chair,"Luxury bedroom with soft lighting",Bedroom
-TABLE-003,https://example.com/table3.jpg,Oak Coffee Table,,Living Room
-```
-</CodeGroup>
-
-### Multi-Select Upload
-
-1. Click "Batch Mode" in dashboard
-2. Select multiple product images
-3. Apply universal settings
-4. Start batch processing
-
-## Batch Templates
-
-### Creating Templates
-
-Save time by creating reusable templates:
-
-<Tabs>
-  <Tab title="Scene Templates">
-    - Save successful prompts
-    - Include positioning data
-    - Set default resolutions
-    - Configure lighting presets
-  </Tab>
-  <Tab title="Category Templates">
-    **Living Room Products**
-    - Modern minimalist scenes
-    - Traditional cozy settings
-    - Scandinavian styles
-    
-    **Bedroom Products**
-    - Master bedroom ambiance
-    - Guest room simplicity
-    - Kids room playfulness
-  </Tab>
-  <Tab title="Brand Templates">
-    - Consistent brand aesthetics
-    - Standard compositions
-    - Approved color palettes
-    - Required accessories
-  </Tab>
-</Tabs>
-
-## Processing Options
-
-### Quality Settings
-
-<CardGroup cols={2}>
-  <Card title="Speed Priority" icon="bolt">
-    - Lower resolution previews
-    - Faster processing
-    - Good for initial reviews
-    - 1K or 2K output
+<CardGroup cols={3}>
+  <Card title="Fast" icon="bolt">
+    Generate styled images for your entire catalog in minutes, not hours
   </Card>
-  <Card title="Quality Priority" icon="gem">
-    - Maximum resolution
-    - Best detail preservation
-    - Final production assets
-    - 4K or 8K output
+  <Card title="Consistent" icon="palette">
+    One prompt ensures uniform styling across all products
+  </Card>
+  <Card title="Easy" icon="hand-sparkles">
+    Simple upload process - no complex setup required
   </Card>
 </CardGroup>
 
-### Batch Controls
+## Perfect For
 
-- **Parallel Processing**: Up to 10 simultaneous generations
-- **Queue Management**: Pause, resume, or cancel batches
-- **Priority Ordering**: Process urgent items first
-- **Error Handling**: Auto-retry failed generations
+- **Catalog Updates**: Style your entire product line with consistent aesthetics
+- **Marketing Campaigns**: Create cohesive visuals for campaigns in bulk
+- **Online Stores**: Generate uniform product images for your e-commerce site
+- **Seasonal Collections**: Quickly create themed visuals for new collections
 
-## Review Workflow
+## Supported Formats
 
-### Batch Results Dashboard
+Batch mode supports all aspect ratios available in single generation:
+- Square (1:1)
+- Portrait formats (2:3, 3:4, 4:5, 9:16)
+- Landscape formats (3:2, 4:3, 5:4, 16:9)
 
-<Info>
-  All batch results appear in a dedicated review interface with:
-  - Grid or list view options
-  - Quick approve/reject buttons
-  - Bulk selection tools
-  - Export to albums
-</Info>
+<Tip>
+  Select the format that best suits your intended use - Instagram, website banners, print materials, etc.
+</Tip>
 
-### Quality Checks
-
-| Check Type | What to Look For |
-|------------|------------------|
-| **Composition** | Product properly positioned |
-| **Lighting** | Consistent across batch |
-| **Style** | Matches brand guidelines |
-| **Technical** | No artifacts or errors |
-
-## Best Practices
+## Best Practices for Batch Mode
 
 <AccordionGroup>
-  <Accordion title="Prepare products consistently">
-    - Use same photography angle
-    - Maintain consistent lighting
-    - Standardize image dimensions
-    - Clean, high-res source files
+  <Accordion title="Use consistent product images">
+    For best results, upload products photographed from similar angles with consistent lighting. This helps the AI maintain coherent styling across all generations.
   </Accordion>
-  <Accordion title="Test before full batch">
-    - Run 5-10 product sample
-    - Refine prompts based on results
-    - Adjust settings as needed
-    - Save successful template
+  <Accordion title="Write clear, descriptive prompts">
+    Be specific about the scene you want: "Modern minimalist living room with large windows and natural light" works better than just "living room".
   </Accordion>
-  <Accordion title="Organize efficiently">
-    - Group by product category
-    - Use clear naming conventions
-    - Tag for easy filtering
-    - Create approval workflows
+  <Accordion title="Start with a small test batch">
+    Try 5-10 products first to ensure your prompt creates the desired aesthetic before processing your entire catalog.
   </Accordion>
-  <Accordion title="Monitor progress">
-    - Check first few results
-    - Adjust if needed early
-    - Set up notifications
-    - Plan review sessions
+  <Accordion title="Group similar products">
+    Process products by category (sofas, chairs, tables) for more cohesive results within each product type.
   </Accordion>
 </AccordionGroup>
 
-## Use Cases
+## Processing Speed
 
-### E-commerce Catalogs
-- Generate entire product lines
-- Seasonal collection updates
-- Multiple angle variations
-- A/B testing scenarios
+<Info>
+  Batch processing is optimized for speed - generate dozens of styled images in the time it would take to create just a few manually. Processing time varies based on the number of products and selected resolution.
+</Info>
 
-### Marketing Campaigns
-- Social media asset creation
-- Email campaign visuals
-- Ad creative variations
-- Landing page imagery
-
-### Internal Applications
-- Sales presentation materials
-- Training documentation
-- Showroom planning
-- Virtual staging previews
-
-## Pricing & Credits
+## Credits & Pricing
 
 <Warning>
   Batch mode uses standard credit pricing:
-  - Only charged for downloads
-  - Preview generations free
-  - Bulk download discounts available for Enterprise
+  - Generate unlimited previews for free
+  - Credits only used when downloading final images
+  - Same credit rates as single generations (1K = 1 credit, 2K = 2 credits, etc.)
 </Warning>
 
-## API Integration
+## Get Started with Batch Mode
 
-<Note>
-  **Enterprise only**: Integrate batch processing into your workflow via API.
-</Note>
-
-```python
-# Example API batch submission
-import presti_api
-
-batch = presti_api.create_batch(
-    template_id="living_room_modern",
-    products=[
-        {"sku": "SOFA-001", "image_url": "..."},
-        {"sku": "SOFA-002", "image_url": "..."}
-    ],
-    settings={
-        "resolution": "4K",
-        "lighting": "medium"
-    }
-)
-```
-
-## Next Steps
-
-<CardGroup cols={2}>
-  <Card title="Team Collaboration" icon="users" href="/features/team-collaboration">
-    Learn about sharing and reviewing batch results with your team
-  </Card>
-  <Card title="Custom AI" icon="brain" href="/features/custom-ai">
-    Train AI on your brand for consistent batch outputs
-  </Card>
-</CardGroup>
+<Card title="Ready to create styled product images in bulk?" icon="rocket">
+  Batch mode is available on Team and Enterprise plans. Upload your products, write one prompt, and watch as Presti creates consistent, beautiful lifestyle images for your entire catalog.
+  
+  [Upgrade to Team Plan](https://app.presti.ai/pricing) →
+</Card>

@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Presti.ai Documentation",
+  "name": "Presti",
   "theme": "mint",
   "logo": {
     "dark": "/logo/dark.svg",
@@ -24,11 +24,6 @@
   },
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://docs.presti.ai"
-    },
-    {
       "name": "Community",
       "icon": "slack",
       "url": "https://presti.ai/community"
@@ -40,65 +35,57 @@
     }
   ],
   "navigation": {
-    "dropdowns": [
+    "groups": [
       {
-        "dropdown": "Documentation",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "about",
-              "quickstart"
-            ]
-          },
-          {
-            "group": "Features",
-            "pages": [
-              "features/image-generation",
-              "features/editing-tools",
-              "features/batch-mode",
-              "features/video-generation",
-              "features/team-collaboration",
-              "features/custom-ai"
-            ]
-          },
-          {
-            "group": "User Guides",
-            "pages": [
-              "guides/prompt-examples",
-              "guides/silo-shots",
-              "guides/ai-prompts",
-              "guides/best-practices",
-              "guides/resolution-guide",
-              "guides/lighting-guide",
-              "guides/multi-product-staging"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "troubleshooting/common-issues",
-              "troubleshooting/perspective-matching",
-              "troubleshooting/lighting-integration"
-            ]
-          },
-          {
-            "group": "Pricing & Credits",
-            "pages": [
-              "pricing/overview",
-              "pricing/credits-system",
-              "pricing/plans-comparison"
-            ]
-          },
-          {
-            "group": "Support",
-            "pages": [
-              "support/contact",
-              "support/faq",
-              "support/live-onboarding"
-            ]
-          }
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "about",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          "features/image-generation",
+          "features/editing-tools",
+          "features/batch-mode",
+          "features/video-generation",
+          "features/team-collaboration"
+        ]
+      },
+      {
+        "group": "User Guides",
+        "pages": [
+          "guides/prompt-examples",
+          "guides/silo-shots",
+          "guides/ai-prompts",
+          "guides/best-practices",
+          "guides/resolution-guide",
+          "guides/lighting-guide",
+          "guides/multi-product-staging"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "troubleshooting/common-issues",
+          "troubleshooting/perspective-matching",
+          "troubleshooting/lighting-integration"
+        ]
+      },
+      {
+        "group": "Pricing & Credits",
+        "pages": [
+          "pricing"
+        ]
+      },
+      {
+        "group": "Support",
+        "pages": [
+          "support/contact",
+          "support/faq",
+          "support/live-onboarding"
         ]
       }
     ]
