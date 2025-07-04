@@ -1,309 +1,83 @@
 ---
 title: 'Lighting Integration'
-description: 'Achieve seamless lighting consistency across products and scenes'
+description: 'Match lighting for realistic scenes'
 ---
-
-## Lighting Harmony
-
-Proper lighting integration ensures your products look naturally placed within generated scenes, not pasted on top.
-
-<Info>
-  **Key Principle**: Match the intensity and direction of light between your product and the generated environment.
-</Info>
 
 ## Understanding Light Matching
 
-### Why Lighting Consistency Matters
+Consistent lighting makes AI-generated scenes believable. Mismatched lighting is the #1 giveaway of artificial imagery.
 
-Mismatched lighting immediately signals "fake" to viewers:
-- Conflicting shadows reveal compositing
-- Different color temperatures clash
-- Intensity variations look unnatural
-- Trust and quality perception suffer
-
-### The Integration Challenge
-
-<Tabs>
-  <Tab title="Common Issues">
-    - Product too bright for dim room
-    - Shadow directions don't match
-    - Color temperature conflicts
-    - Harsh product lighting in soft scene
-  </Tab>
-  <Tab title="Visual Impact">
-    - Product appears "pasted on"
-    - Scene loses cohesion
-    - Unprofessional result
-    - Reduced conversion rates
-  </Tab>
-</Tabs>
+**Key principle**: Product shadows must match scene lighting direction.
 
 ## Using the Relight Tool
 
-### Intensity Levels Explained
+### Intensity Levels
 
-<CardGroup cols={3}>
-  <Card title="Low Setting" icon="moon">
-    **When to use:**
-    - Dim, moody rooms
-    - Evening/night scenes
-    - Single small window
-    - Intimate atmospheres
-    
-    **Effect:**
-    - Soft shadows
-    - Warm tones
-    - Subtle highlights
+<CardGroup cols={2}>
+  <Card title="None" icon="circle">
+    Keeps original product lighting unchanged
   </Card>
-  <Card title="Medium Setting" icon="cloud-sun">
-    **When to use:**
-    - Standard daylight
-    - Most scenarios
-    - Multiple windows
-    - Balanced scenes
-    
-    **Effect:**
-    - Natural shadows
-    - True colors
-    - Even exposure
+  <Card title="Low" icon="circle-half-stroke">
+    Subtle adjustment for minor mismatches
   </Card>
-  <Card title="High Setting" icon="sun">
-    **When to use:**
-    - Bright studios
-    - Product showcases
-    - Modern, airy spaces
-    - Maximum clarity
-    
-    **Effect:**
-    - Minimal shadows
-    - Crisp details
-    - High key look
+  <Card title="Medium" icon="circle-three-quarters-stroke">
+    Balanced relighting for most cases
+  </Card>
+  <Card title="High" icon="circle">
+    Strong relighting for dramatic scenes
   </Card>
 </CardGroup>
 
-### Relight Workflow
+### Quick Workflow
+1. Generate scene first
+2. Check shadow direction
+3. Apply Relight if needed
+4. Regenerate for perfect match
 
-<Steps>
-  <Step title="Analyze Scene">
-    Look at generated background lighting
-  </Step>
-  <Step title="Select Intensity">
-    Choose setting that matches scene mood
-  </Step>
-  <Step title="Generate Variations">
-    Each setting creates 4 options
-  </Step>
-  <Step title="Compare & Select">
-    Pick best integration
-  </Step>
-  <Step title="Fine-Tune">
-    Generate more if needed
-  </Step>
-</Steps>
-
-## Matching Light Direction
-
-### Reading Shadow Cues
-
-<Warning>
-  Shadow direction is the most critical factor for believable integration.
-</Warning>
-
-**How to analyze:**
-1. Identify main light source in scene
-2. Note shadow direction from objects
-3. Check your product's shadows
-4. Ensure alignment
-
-### Common Scenarios
+## Common Lighting Scenarios
 
 <Tabs>
   <Tab title="Window Light">
-    **Scene setup:**
-    - Light from left/right
-    - Long shadows
-    - Gradient falloff
-    
-    **Product needs:**
-    - Matching side lighting
-    - Similar shadow length
-    - Gradual light falloff
+    **Original**: Studio lighting  
+    **Scene**: Side window  
+    **Fix**: Relight Medium-High
   </Tab>
-  <Tab title="Overhead Lighting">
-    **Scene setup:**
-    - Ceiling fixtures
-    - Short shadows
-    - Even distribution
-    
-    **Product needs:**
-    - Top-down lighting
-    - Minimal shadows
-    - Uniform brightness
+  <Tab title="Overhead">
+    **Original**: Front lighting  
+    **Scene**: Ceiling lights  
+    **Fix**: Relight Low-Medium
   </Tab>
-  <Tab title="Multiple Sources">
-    **Scene setup:**
-    - Windows + lamps
-    - Complex shadows
-    - Mixed temperatures
-    
-    **Product needs:**
-    - Balanced lighting
-    - Soft shadows
-    - Neutral temperature
+  <Tab title="Sunset">
+    **Original**: Neutral lighting  
+    **Scene**: Golden hour  
+    **Fix**: Relight High + warm prompt
   </Tab>
 </Tabs>
 
-## Color Temperature Harmony
+## Color Temperature
 
-### Understanding Color Temperature
+### Quick Reference
+| Scene Type | Temperature | Relight Setting |
+|------------|-------------|-----------------|
+| Morning light | Cool | Low + "morning" |
+| Midday sun | Neutral | Medium |
+| Sunset/Evening | Warm | High + "sunset" |
+| Indoor lamps | Warm | Medium + "warm" |
 
-| Temperature | Kelvin | Visual | Scene Type |
-|-------------|--------|--------|------------|
-| **Warm** | 2700-3000K | Orange/yellow | Cozy, evening |
-| **Neutral** | 3500-4500K | White | Balanced, natural |
-| **Cool** | 5000-6500K | Blue/white | Modern, daylight |
+## Troubleshooting
 
-### Fixing Temperature Mismatches
+### Common Issues
+- **Hard shadows**: Original has harsh lighting → Use diffused lighting keywords
+- **Double shadows**: Conflicting light sources → Increase Relight intensity
+- **No shadows**: Overlit original → Add "dramatic lighting" to prompt
+- **Wrong direction**: Mismatch with scene → Always use Relight tool
 
-<AccordionGroup>
-  <Accordion title="Product too warm">
-    **Symptoms**: Yellow/orange tint vs cool scene
-    
-    **Solutions**:
-    - Adjust original photo white balance
-    - Use cooler scene descriptions
-    - Add "cool daylight" to prompt
-  </Accordion>
-  <Accordion title="Product too cool">
-    **Symptoms**: Blue tint vs warm scene
-    
-    **Solutions**:
-    - Warm up source image
-    - Generate warmer scenes
-    - Use "warm ambient light" in prompt
-  </Accordion>
-</AccordionGroup>
-
-## Advanced Integration Techniques
-
-### Multi-Product Lighting
-
-When staging multiple products:
-
-1. **Standardize source lighting**: Shoot all products under same conditions
-2. **Apply uniform Relight**: Use same setting for all items
-3. **Check shadow consistency**: All shadows should point same direction
-4. **Verify color match**: No item should stand out
-
-### Scene-Specific Adjustments
-
-<CardGroup cols={2}>
-  <Card title="Bright Scenes" icon="sun">
-    - Start with well-lit products
-    - Use High relight sparingly
-    - Add "bright, airy" to prompt
-    - Minimize shadows
-  </Card>
-  <Card title="Moody Scenes" icon="moon">
-    - Begin with softer product light
-    - Apply Low relight
-    - Include "soft ambient" in prompt
-    - Embrace shadows
-  </Card>
-</CardGroup>
-
-## Troubleshooting Guide
-
-### Common Lighting Issues
-
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| **Floating appearance** | No shadow connection | Lower product, add contact shadow |
-| **Glowing product** | Too bright vs scene | Use lower Relight setting |
-| **Muddy colors** | Wrong color temp | Match scene temperature |
-| **Harsh contrast** | Direct vs diffused light | Soften with Relight tool |
-
-### Quick Fixes
-
-<Tabs>
-  <Tab title="Shadow Issues">
-    1. Check product placement
-    2. Ensure floor contact
-    3. Match shadow direction
-    4. Use appropriate Relight
-  </Tab>
-  <Tab title="Brightness Problems">
-    1. Compare to scene objects
-    2. Adjust Relight intensity
-    3. Regenerate if needed
-    4. Try different times of day
-  </Tab>
-  <Tab title="Color Mismatches">
-    1. Identify temperature conflict
-    2. Adjust source or scene
-    3. Use neutral lighting
-    4. Keep consistent
-  </Tab>
-</Tabs>
-
-## Best Practices
-
-### Pre-Production
-
-<Info>
-  Good lighting integration starts with proper product photography.
-</Info>
-
-**Product photography tips:**
-- Use diffused, even lighting
-- Avoid harsh directional light
-- Maintain neutral color temperature
-- Create soft shadows
-
-### During Generation
-
-**Prompt strategies:**
-- Describe lighting specifically
-- Match product photo conditions
-- Use consistent terminology
-- Reference real scenarios
-
-### Post-Generation
-
-**Quality checks:**
-- [ ] Shadow directions align
-- [ ] Brightness levels match
-- [ ] Colors harmonize
-- [ ] No floating effect
-- [ ] Natural integration
-
-## Lighting Consistency Checklist
-
-Before finalizing any image:
-
-1. **Shadow check**: All pointing same way?
-2. **Brightness test**: Product blend naturally?
-3. **Color harmony**: Temperatures match?
-4. **Edge quality**: No harsh outlines?
-5. **Overall feel**: Looks photographed together?
-
-## Pro Integration Tips
-
-<CardGroup cols={2}>
-  <Card title="Study References" icon="eye">
-    Analyze real room photos for natural lighting patterns
-  </Card>
-  <Card title="Test Variations" icon="flask">
-    Try multiple Relight settings before choosing
-  </Card>
-  <Card title="Document Success" icon="book">
-    Note which settings work for different scenarios
-  </Card>
-  <Card title="Create Standards" icon="clipboard">
-    Develop lighting presets for common situations
-  </Card>
-</CardGroup>
+### Pro Tips
+- Match time of day in prompt with Relight level
+- Use "soft lighting" for subtle shadows
+- Specify light source: "window light", "overhead lighting"
+- Generate multiple versions to compare
 
 <Check>
-  Lighting perfected? Explore our [Support resources](/support/contact) or return to [Common Issues](/troubleshooting/common-issues).
+  Remember: Relight tool only adjusts intensity, not direction. Plan your scene lighting accordingly.
 </Check>

@@ -60,9 +60,6 @@
           "guides/prompt-examples",
           "guides/silo-shots",
           "guides/ai-prompts",
-          "guides/best-practices",
-          "guides/resolution-guide",
-          "guides/lighting-guide",
           "guides/multi-product-staging"
         ]
       },
@@ -70,7 +67,6 @@
         "group": "Troubleshooting",
         "pages": [
           "troubleshooting/common-issues",
-          "troubleshooting/perspective-matching",
           "troubleshooting/lighting-integration"
         ]
       },
@@ -84,8 +80,7 @@
         "group": "Support",
         "pages": [
           "support/contact",
-          "support/faq",
-          "support/live-onboarding"
+          "support/faq"
         ]
       }
     ]
